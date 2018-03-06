@@ -3,6 +3,7 @@ $(document).ready(function() { // do this when the document is loaded
 	$("#Contact").hide(); // hide the element with ID "otherElement"
   $("#addContact").hide();
 	$("#Gesture").hide();
+		$("#btnnewtab1").hide();
 
 });
 
@@ -11,6 +12,7 @@ $("#btnDialer").click(function() { // when "button_id" is clicked
   $("#Contact").hide();
   $("#addContact").hide();
 	$("#Gesture").hide();
+		$("#btnnewtab1").hide();
 
 });
 
@@ -19,6 +21,7 @@ $("#btnContact").click(function() { // when "button_id" is clicked
   $("#Dialer").hide();
   $("#addContact").hide();
 	$("#Gesture").hide();
+		$("#btnnewtab1").hide();
 
 
 });
@@ -28,6 +31,17 @@ $("#btnAddContact").click(function() { // when "button_id" is clicked
   $("#Contact").hide();
   $("#Dialer").hide();
 	$("#Gesture").hide();
+	$("#btnnewtab1").hide();
+
+});
+
+
+$("#btnnewtab").click(function() { // when "button_id" is clicked
+	$("#addContact").hide(); // show element
+  $("#Contact").hide();
+  $("#Dialer").hide();
+	$("#Gesture").hide();
+	$("#btnnewtab1").show();
 
 });
 

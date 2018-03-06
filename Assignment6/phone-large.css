@@ -36,7 +36,7 @@ text-align: center;
     border: 1px solid #ccc;
     background-color: #000000;
 }
-.tab #btnContact , #btnDialer , #btnAddContact{
+.tab #btnContact , #btnDialer , #btnAddContact , #btnnewtab{
   font-size: 200%;
 }
 
