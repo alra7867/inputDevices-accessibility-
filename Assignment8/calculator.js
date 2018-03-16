@@ -91,28 +91,50 @@ function clickSelectedItem() {
 
 // this function responds to user key presses
 // you'll rewrite this to control your interface using some number of keys
-$(document).keypress(function(event) {
+ /*$(document).keypress(function(event) {
 	if (event.key == "a") {
-		alert("You pressed the 'a' key!")
+		clickSelectedItem()
+
 	} else if (event.key == "b") {
 		alert("You pressed the 'b' key!")
 	}
-})
+})*/
 
 $(document).keydown(function(event) {
 	if (event.keyCode == 38) {
-		alert("You pressed the up key!")
-	} else if(event.keyCode == 40){
+			selectUp();
 
-		alert ("You pressed the down key")
+	} else if(event.keyCode == 40){
+			selectDown();
+
 	} else if(event.keyCode == 39){
 
-		alert("You pressed the right key")
-	} else if (event.keyCode ==37){
+		selectNext();
 
-		alert("You pressed the left key")
+	} else if (event.keyCode ==37){
+		selectPrevious();
+
+	} else if (event.key=="p"){
+		clickSelectedItem();
 	}
 })
+
+
+$(document).keypress(function(event){
+
+	if(event.key=="w"){
+		selectUp();
+	} else if(event.key=="s"){
+
+		selectDown();
+	} else if(event.key=="d"){
+		selectNext();
+	} else if (event.key =="a"){
+
+		selectPrevious();
+	}
+
+});
 /*
 $(document).keydown(function(e){
     if (e.keyCode > 36 && e.keyCode < 41) {
